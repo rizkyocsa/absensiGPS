@@ -30,7 +30,7 @@
 @section('content')
 <div class="row" style="margin-top: 70px">
     <div class="col">
-        <input type="text" id="lokasi">
+        <hidden type="text" id="lokasi">
         <div class="webcam-capture"></div>
     </div>
 </div>
@@ -63,6 +63,7 @@
     var notifikasi_in = document.getElementById('notifikasi_in');
     var notifikasi_out = document.getElementById('notifikasi_out');
     var notifikasi_jarak = document.getElementById('notifikasi_jarak');
+
     Webcam.set({
         height: 480,
         widht: 640,
@@ -89,11 +90,11 @@
         // $longitudekantor = 107.1465425;
         var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
         // var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
-        var circle = L.circle([-6.8118965, 107.136648], {
+        var circle = L.circle([-6.8078526,107.146554], {
             color: 'red',
             fillColor: '#f03',
-            fillOpacity: 0.5,
-            radius: 1200
+            fillOpacity: 0.3,
+            radius: 1000
         }).addTo(map);  
     }
 

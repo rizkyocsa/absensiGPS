@@ -170,11 +170,6 @@
                     Data Departemen
                     </a>
                 </div>
-                <div class="dropdown-menu-column">
-                    <a class="dropdown-item" href="./alerts.html">
-                    Empty Page
-                    </a>
-                </div>
                 </div>
             </div>
             <li class="nav-item">
@@ -235,11 +230,6 @@
                 <div class="dropdown-menu-column">
                     <a class="dropdown-item" href="/panel/laporan/rekap">
                     Rekap Presensi
-                    </a>
-                </div>
-                <div class="dropdown-menu-column">
-                    <a class="dropdown-item" href="./alerts.html">
-                    Empty Page
                     </a>
                 </div>
                 </div>

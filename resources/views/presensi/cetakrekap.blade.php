@@ -104,11 +104,11 @@
         </td>
         <td>
             <span id="title">
-                REKAP PRESENSI KARYAWAN <br>
+                LAPORAN PRESENSI GURU SDN SINDANGRERET <br>
                 PERIODE {{ strtoupper($namabulan[$bulan]) }} {{ $tahun }} <br>
                 PT Kerja Praktek <br>
             </span>
-            <span style="line-height: 3px;"><i>Jln. Kerja Prakterk No. 10, Kecamatan Cianjur, Kabupaten Cianjur</i></span>
+            <span style="line-height: 3px;"><i>Jln Jati Kp. SINDANGRERET, Kecamatan Cianjur, Kabupaten Cianjur</i></span>
         </td>
     </tr>
   </table>
@@ -166,7 +166,7 @@
       @endforeach
   </table>
 
-  <table class="table-signature">
+  <table class="table-signature" style="border: 0px;">
     <tr>
         <td rowspan="6"></td>
         <td colspan="4">HRD</td>
@@ -182,8 +182,8 @@
         <td rowspan="6"></td>
     </tr>
     <tr>
-        <td colspan="4" rowspan="3" >A</td>
-        <td colspan="4" rowspan="3" >A</td>
+        <td colspan="4" rowspan="3" >&nbsp;</td>
+        <td colspan="4" rowspan="3" >&nbsp;</td>
         <!-- <td>A</td>
         <td>A</td>
         <td>A</td>
@@ -210,12 +210,12 @@
         <td>A</td> -->
     </tr>
     <tr>
-        <td colspan="4">Nama HRD</td>
-        <td colspan="4">Nama Pimpinan</td>
+        <td colspan="4">....................................</td>
+        <td colspan="4">Arismaya</td>
     </tr>
     <tr>
-        <td colspan="4" >NIK.</td>
-        <td colspan="4" >NIK.</td>
+        <td colspan="4" >NIP. 1964095419870320009</td>
+        <td colspan="4" >NIP. 1964082419880320007</td>
     </tr>
     
   </table>

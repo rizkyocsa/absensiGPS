@@ -13,7 +13,7 @@
 @endsection
 
 @section('content')
-<div class="row" style="margin-top: 65px">
+<div class="row" style="margin-top: 40px">
     <div class="col">
         @php
             $messagesuccess = Session::get('success');
@@ -72,4 +72,9 @@
         </div>
     </div>
 </form>
+
+<div class="row m-1">
+    <a class="btn btn-danger btn-block" href="/proseslogout">Logout</a>
+</div>
+
 @endsection

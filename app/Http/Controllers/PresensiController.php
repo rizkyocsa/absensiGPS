@@ -350,7 +350,7 @@ class PresensiController extends Controller
         
         $query->orderBy('tgl_izin','desc');
 
-        $izinsakit = $query->paginate(1);
+        $izinsakit = $query->paginate(10);
         
         // $izinsakit = $query->get();
 
