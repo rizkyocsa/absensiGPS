@@ -37,13 +37,13 @@ class DashboardController extends Controller
         $namabulan = ["","Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
 
         $rekapizin = DB::table('izin')
-            ->selectRaw('SUM(IF(status = "i", 1,0)) as jmlizin, SUM(IF(status = "s", 1,0)) as jmlsakit')
+            ->selectRaw('SUM(IF(status = "i", 1,0)) as jmlizin, SUM(IF(status = "s", 1,0)) as jmlsakit, SUM(IF(status = "k", 1,0)) as jmlkeluar')
             ->where('nik', $nik)
             ->whereRaw('MONTH(tgl_izin)="'.$bulanini.'"')
             ->whereRaw('YEAR(tgl_izin)="'.$tahunini.'"')
             ->where('status_approved', 1)
             ->first();
-
+        // dd($rekapizin);
         return view('dashboard/dashboard', 
                 compact('presensihariini', 'historibulanini', 'namabulan', 'bulanini', 'tahunini', 
                 'rekappresensi', 'leaderboard', 'rekapizin'));
@@ -58,11 +58,11 @@ class DashboardController extends Controller
             ->first();
 
         $rekapizin = DB::table('izin')
-            ->selectRaw('SUM(IF(status IN ("i", "k"), 1,0)) as jmlizin, SUM(IF(status = "s", 1,0)) as jmlsakit')
+            ->selectRaw('SUM(IF(status = "i", 1,0)) as jmlizin, SUM(IF(status = "s", 1,0)) as jmlsakit, SUM(IF(status = "k", 1,0)) as jmlkeluar')
             ->where('tgl_izin', $hariini)
             ->where('status_approved', 1)
             ->first();
-
+        // dd($rekapizin);
         return view('dashboard.dashboardadmin', compact('rekappresensi','rekapizin'));
     }
     

@@ -201,7 +201,9 @@
                     <div class="card">
                         <div class="card-body text-center" style="padding: 16px 14px !important">
                             <span class="badge bg-danger" style="position: absolute; top:3px; right:10px; font-size: 0.5rem;
-                            z-index:999;">{{ $rekapizin->jmlizin }}</span>
+                            z-index:999;">
+                            {{ (isset($rekapizin->jmlkeluar) ? $rekapizin->jmlkeluar : 0) + (isset($rekapizin->jmlizin) ? $rekapizin->jmlizin : 0) }}
+                            </span>
                             <ion-icon name="newspaper-outline" style="font-size: 1.6rem;" class="text-success"></ion-icon>
                             <br><span style="font-size: 0.8rem;">Izin</span>
                         </div>

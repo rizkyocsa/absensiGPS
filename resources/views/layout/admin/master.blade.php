@@ -44,7 +44,7 @@
     <link href="{{ asset('dist/css/tabler-payments.min.css?1685973381')}}" rel="stylesheet"/>
     <link href="{{ asset('dist/css/tabler-vendors.min.css?1685973381')}}" rel="stylesheet"/>
     <link href="{{ asset('dist/css/demo.min.css?1685973381')}}" rel="stylesheet"/>
-    <link rel="stylesheet" href="sweetalert2.min.css">
+    <!-- <link rel="stylesheet" href="sweetalert2.min.css"> -->
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
     <style>

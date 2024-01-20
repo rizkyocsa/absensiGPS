@@ -100,7 +100,7 @@
   <table style="width: 100%" >
     <tr>
         <td style="width: 30px">
-            <img src="{{ asset('assets/img/ff.png')}}" width="70" height="70" alt="">
+            <img src="{{ asset('assets/img/logo-sd.png')}}" width="70" height="70" alt="">
         </td>
         <td>
             <span id="title">
@@ -210,8 +210,8 @@
         <td>A</td> -->
     </tr>
     <tr>
-        <td colspan="4">....................................</td>
-        <td colspan="4">Arismaya</td>
+        <td colspan="4">Roni Gunawan</td>
+        <td colspan="4">Arismaya Anggraeni</td>
     </tr>
     <tr>
         <td colspan="4" >NIP. 1964095419870320009</td>

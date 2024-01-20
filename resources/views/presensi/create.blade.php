@@ -90,7 +90,7 @@
         // $longitudekantor = 107.1465425;
         var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
         // var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
-        var circle = L.circle([-6.8078526,107.146554], {
+        var circle = L.circle([-6.8056215,107.1406604], {
             color: 'red',
             fillColor: '#f03',
             fillOpacity: 0.3,

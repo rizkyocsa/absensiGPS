@@ -136,7 +136,18 @@
                                 <td>{{$data->nik}}</td>
                                 <td>{{$data->nama_lengkap}}</td>
                                 <td>{{$data->jabatan}}</td>
-                                <td>{{$data->status == "i" ? "Izin" : "Sakit"}}</td>
+                                <td>
+                                    @if($data->status == "i")
+                                        Izin
+                                    @elseif($data->status == "s")
+                                        Sakit
+                                    @elseif($data->status == "k")
+                                        Izin Keluar
+                                    @else
+                                        <!-- Handle other cases if needed -->
+                                        Unknown Status
+                                    @endif
+                                </td>
                                 <td>{{$data->keterangan}}</td>
                                 <td>
                                     @if($data->status_approved==1)

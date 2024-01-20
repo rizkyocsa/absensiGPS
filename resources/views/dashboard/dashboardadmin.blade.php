@@ -74,7 +74,7 @@
                             </div>
                             <div class="col">
                             <div class="font-weight-medium">
-                            {{$rekapizin->jmlizin != null ? $rekapizin->jmlizin : 0 }}
+                            {{ (isset($rekapizin->jmlizin) ? $rekapizin->jmlizin : 0) + (isset($rekapizin->jmlkeluar) ? $rekapizin->jmlkeluar : 0) }}
                             </div>
                             <div class="text-muted">
                                 Karyawan Izin
