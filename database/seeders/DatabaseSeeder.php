@@ -27,24 +27,16 @@ class DatabaseSeeder extends Seeder
 
         $Dept = [
             [
-                'kode_dept' => 'MTK',
-                'nama_dept' => 'Matematika',
+                'kode_dept' => 'KS',
+                'nama_dept' => 'Kepala Sekolah',
             ],
             [
-                'kode_dept' => 'IPA',
-                'nama_dept' => 'Ilmu Pengetahuan Alam',
+                'kode_dept' => 'GR',
+                'nama_dept' => 'Guru',
             ],
             [
-                'kode_dept' => 'IPS',
-                'nama_dept' => 'Ilmu Pengetahuan Sosial',
-            ],
-            [
-                'kode_dept' => 'PAI',
-                'nama_dept' => 'Pendidikan Agama Islam',
-            ],
-            [
-                'kode_dept' => 'KU',
-                'nama_dept' => 'Keuangan Umum',
+                'kode_dept' => 'SS',
+                'nama_dept' => 'Staff',
             ],
         ];
         DB::table('departemen')->insert($Dept);
@@ -53,46 +45,46 @@ class DatabaseSeeder extends Seeder
             [
                 'nik' => '90950',
                 'nama_lengkap' => 'Oon Hasanah, S.Pd',
-                'jabatan' => 'Kepala Sekolah',
+                'jabatan' => 'PNS',
                 'no_hp' => '089617108899',
                 'foto' => '-',
-                'kode_dept' => 'MTK',
+                'kode_dept' => 'KS',
                 'password' => Hash::make('12345'),
             ],
             [
                 'nik' => '90320',
                 'nama_lengkap' => 'Arismaya Anggraeni, S.Pd',
-                'jabatan' => 'Guru',
+                'jabatan' => 'PNS',
                 'no_hp' => '082316509084',
                 'foto' => '-',
-                'kode_dept' => 'IPS',
+                'kode_dept' => 'GR',
                 'password' => Hash::make('12345'),
             ],
             [
                 'nik' => '90321',
                 'nama_lengkap' => 'Luny Rachmawati, S.Pd',
-                'jabatan' => 'Guru',
+                'jabatan' => 'PNS',
                 'no_hp' => '081966789201',
                 'foto' => '-',
-                'kode_dept' => 'IPA',
+                'kode_dept' => 'GR',
                 'password' => Hash::make('12345'),
             ],
             [
                 'nik' => '90952',
                 'nama_lengkap' => 'Astri, S.Pd',
-                'jabatan' => 'Guru',
+                'jabatan' => 'Honorer',
                 'no_hp' => '081990566672',
                 'foto' => '-',
-                'kode_dept' => 'PAI',
+                'kode_dept' => 'GR',
                 'password' => Hash::make('12345'),
             ],
             [
                 'nik' => '90156',
                 'nama_lengkap' => 'Fitriani, S.Pd',
-                'jabatan' => 'Staff',
+                'jabatan' => 'Honorer',
                 'no_hp' => '085173225692',
                 'foto' => '-',
-                'kode_dept' => 'KU',
+                'kode_dept' => 'SS',
                 'password' => Hash::make('12345'),
             ],
         ];
