@@ -74,7 +74,7 @@
     Webcam.attach('.webcam-capture')
 
     var lokasi = document.getElementById('lokasi');
-
+    // lokasi = -6.815744,107.1382528;
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
     }
@@ -94,7 +94,7 @@
             color: 'red',
             fillColor: '#f03',
             fillOpacity: 0.3,
-            radius: 1000
+            radius: 2500
         }).addTo(map);  
     }
 

@@ -26,8 +26,8 @@ class PresensiController extends Controller
         $nik = Auth::guard('karyawan')->user()->nik;
         $tgl_presensi = date("Y-m-d");
         $jam = date("H:i:s");
-        $latitudkantor = -6.8118965;
-        $longitudekantor = 107.136648;
+        $latitudkantor = -6.8056215;
+        $longitudekantor = 107.1406604;
         $lokasi = $request->lokasi;
         $lokasiuser = explode(",", $lokasi);
         $latitudeuser = $lokasiuser[0];
@@ -52,9 +52,8 @@ class PresensiController extends Controller
         $image_base64 = base64_decode($image_parts[1]);
         $fileName = $formatName . ".png";
         $file = $folderPath . $fileName;
-
         
-        if($radius > 1200){
+        if($radius > 2500){
             echo"error|Maaf anda berada diluar radius, Jarak anda adalah ". $radius ." meter dari kantor|radius";
         }else{
             if($check > 0){        
@@ -186,6 +185,7 @@ class PresensiController extends Controller
     {
         $nik = Auth::guard('karyawan')->user()->nik;
         $dataizin = DB::table('izin')->where('nik', $nik)->get();
+        // dd('test');
         return view('presensi.izin', compact('dataizin'));
     }
 
@@ -262,7 +262,7 @@ class PresensiController extends Controller
             ->whereRaw('MONTH(tgl_presensi)="'. $bulan .'"')
             ->whereRaw('YEAR(tgl_presensi)="'. $tahun .'"')
             ->get();
-        // dd($presensi);
+        // dd($karyawan);
         return view('presensi.cetaklaporan', compact('bulan','tahun','namabulan','karyawan','presensi'));
     }
 

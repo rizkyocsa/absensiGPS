@@ -43,7 +43,7 @@ class DashboardController extends Controller
             ->whereRaw('YEAR(tgl_izin)="'.$tahunini.'"')
             ->where('status_approved', 1)
             ->first();
-        // dd($rekapizin);
+        // dd($presensihariini);
         return view('dashboard/dashboard', 
                 compact('presensihariini', 'historibulanini', 'namabulan', 'bulanini', 'tahunini', 
                 'rekappresensi', 'leaderboard', 'rekapizin'));

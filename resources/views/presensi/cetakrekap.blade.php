@@ -169,13 +169,13 @@
   <table class="table-signature" style="border: 0px;">
     <tr>
         <td rowspan="6"></td>
-        <td colspan="4">HRD</td>
+        <td colspan="4">Staff</td>
         <!-- <td>A</td>
         <td>A</td>
         <td>A</td> -->
         <td rowspan="6"></td>
         <td rowspan="6"></td>
-        <td colspan="4">PIMPINAN</td>
+        <td colspan="4">Kepala Sekolah</td>
         <!-- <td>A</td>
         <td>A</td>
         <td>A</td> -->
@@ -210,12 +210,12 @@
         <td>A</td> -->
     </tr>
     <tr>
-        <td colspan="4">Roni Gunawan</td>
-        <td colspan="4">Arismaya Anggraeni</td>
+      <td colspan="4">Fitriani, S.Pd</td>
+      <td colspan="4">Oon Hasanah, S.Pd</td>
     </tr>
     <tr>
-        <td colspan="4" >NIP. 1964095419870320009</td>
-        <td colspan="4" >NIP. 1964082419880320007</td>
+      <td colspan="4" >NIP. 1964082419880320007</td>
+      <td colspan="4" >NIP. 1964095419870320009</td>
     </tr>
     
   </table>
