@@ -106,7 +106,6 @@
             <span id="title">
                 LAPORAN PRESENSI GURU SDN SINDANGRERET <br>
                 PERIODE {{ strtoupper($namabulan[$bulan]) }} {{ $tahun }} <br>
-                PT Kerja Praktek <br>
             </span>
             <span style="line-height: 3px;"><i>Jln Jati Kp. SINDANGRERET, Kecamatan Cianjur, Kabupaten Cianjur</i></span>
         </td>
